@@ -29,13 +29,13 @@ private:
   uint8_t I2C_address = 0x16;
 	uint8_t IV3_status;
 
+	void i2c_trans(uint8_t* data, uint8_t length);
+
 public:
   TIME_STRUCT time;
 
 	// Constructor
-	IV3_clock() // Initialises all parameters to default
-	{
-	}
+	IV3_clock(){};
 
   void set_time(void);
   void read_time(void);

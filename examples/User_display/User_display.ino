@@ -23,7 +23,6 @@ int k =0, j;
 void setup()
 {
   Serial.begin(9600);
-
 }
 
 void loop()
