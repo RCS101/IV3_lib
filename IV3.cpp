@@ -78,7 +78,8 @@ void IV3_clock::set_brightness(uint8_t brightness)
 {
   uint8_t TX[2];
 
-  brightness;
+  if(brightness>MAX_TUBE_BRIGHTNESS)
+    brightness = MAX_TUBE_BRIGHTNESS;
 
   TX[0] = SET_BRIGHTNESS;
   TX[1] = brightness;
@@ -112,7 +113,7 @@ void IV3_clock::get_status(void)
 
   i2c_trans(TX, 2);
   delay(10);
-  
+
   Wire.requestFrom(I2C_address, 1);
   while(Wire.available())
   {

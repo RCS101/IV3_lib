@@ -3,6 +3,8 @@
 
 #include <Arduino.h>
 
+#define MAX_TUBE_BRIGHTNESS 20
+
 #define SET_TIME        0
 #define READ_TIME       1
 #define CLOCK_MODE      2
