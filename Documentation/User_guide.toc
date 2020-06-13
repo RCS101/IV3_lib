@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}Assembly}{2}%
+\contentsline {subsection}{\numberline {1.1}Kit Contents}{2}%
+\contentsline {subsection}{\numberline {1.2}IV-3 Tube assembly}{2}%
+\contentsline {section}{\numberline {2}Setting the time}{6}%
+\contentsline {section}{\numberline {3}Clock menu}{6}%
+\contentsline {subsection}{\numberline {3.1}Setting 12/24h mode}{6}%
+\contentsline {subsection}{\numberline {3.2}Change brightness}{7}%
+\contentsline {subsection}{\numberline {3.3}Night time dimming}{7}%
+\contentsline {section}{\numberline {4}I2C Control}{7}%
+\contentsline {subsection}{\numberline {4.1}I2C}{8}%
+\contentsline {subsection}{\numberline {4.2}Set the time}{8}%
+\contentsline {subsection}{\numberline {4.3}Read the time}{9}%
+\contentsline {subsection}{\numberline {4.4}Clock mode}{9}%
+\contentsline {subsection}{\numberline {4.5}User display}{9}%
+\contentsline {subsection}{\numberline {4.6}Set 24h/12h mode}{9}%
+\contentsline {subsection}{\numberline {4.7}Set brightness}{9}%
+\contentsline {subsection}{\numberline {4.8}Set night-time fade}{9}%
+\contentsline {subsection}{\numberline {4.9}Get clock status}{9}%
+\contentsline {subsection}{\numberline {4.10}Reset}{10}%
