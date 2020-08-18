@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.7)  13 JUN 2020 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.7)  18 AUG 2020 20:42
 entering extended mode
 **./User_guide.tex
 (User_guide.tex
@@ -167,6 +167,9 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 
 LaTeX Warning: Label `fig:status' multiply defined.
 
+
+LaTeX Warning: Label `fig:status' multiply defined.
+
 )
 \openout1 = `User_guide.aux'.
 
@@ -233,11 +236,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Non-PDF special ignored!
 <special> header=tree-dvips91.pro
 {C:/Users/Robin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<./images/IMG_1094.jpg, id=8, 3035.34pt x 4047.12pt>
+<./images/IMG_1094.jpg, id=8, 4047.12pt x 3035.34pt>
 File: ./images/IMG_1094.jpg Graphic file (type jpg)
 <use ./images/IMG_1094.jpg>
 Package pdftex.def Info: ./images/IMG_1094.jpg  used on input line 47.
-(pdftex.def)             Requested size: 151.7759pt x 202.36786pt.
+(pdftex.def)             Requested size: 202.36786pt x 151.7759pt.
 <./images/IMG_11051.jpg, id=9, 615.7404pt x 321.3606pt>
 File: ./images/IMG_11051.jpg Graphic file (type jpg)
 <use ./images/IMG_11051.jpg>
@@ -269,25 +272,28 @@ File: ./images/setTime.png Graphic file (type png)
 Package pdftex.def Info: ./images/setTime.png  used on input line 149.
 (pdftex.def)             Requested size: 299.99504pt x 60.97765pt.
  [8 <./images/setTime.png>]
-<./images/status.png, id=39, 577.40718pt x 106.14656pt>
+<./images/7Segment.png, id=39, 803.0pt x 1071.00125pt>
+File: ./images/7Segment.png Graphic file (type png)
+<use ./images/7Segment.png>
+Package pdftex.def Info: ./images/7Segment.png  used on input line 165.
+(pdftex.def)             Requested size: 80.3047pt x 107.1064pt.
+ [9 <./images/7Segment.png>]
+<./images/status.png, id=44, 577.40718pt x 106.14656pt>
 File: ./images/status.png Graphic file (type png)
 <use ./images/status.png>
-Package pdftex.def Info: ./images/status.png  used on input line 176.
+Package pdftex.def Info: ./images/status.png  used on input line 197.
 (pdftex.def)             Requested size: 288.70288pt x 53.07315pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9] [10 <./images/status.png>] (User_guide.aux)
+ [10 <./images/status.png>] [11]
+(User_guide.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3483 strings out of 480930
- 56209 string characters out of 2899762
+ 3490 strings out of 480930
+ 56240 string characters out of 2899762
  301965 words of memory out of 3000000
- 19353 multiletter control sequences out of 15000+200000
+ 19360 multiletter control sequences out of 15000+200000
  537807 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,9n,43p,640b,282s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -296,9 +302,9 @@ Here is how much of TeX's memory you used:
 blic/amsfonts/cm/cmr12.pfb><C:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Robin/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on User_guide.pdf (10 pages, 4112554 bytes).
+Output written on User_guide.pdf (11 pages, 16381281 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -12,8 +12,8 @@
 \contentsline {subsection}{\numberline {4.3}Read the time}{9}%
 \contentsline {subsection}{\numberline {4.4}Clock mode}{9}%
 \contentsline {subsection}{\numberline {4.5}User display}{9}%
-\contentsline {subsection}{\numberline {4.6}Set 24h/12h mode}{9}%
-\contentsline {subsection}{\numberline {4.7}Set brightness}{9}%
-\contentsline {subsection}{\numberline {4.8}Set night-time fade}{9}%
-\contentsline {subsection}{\numberline {4.9}Get clock status}{9}%
-\contentsline {subsection}{\numberline {4.10}Reset}{10}%
+\contentsline {subsection}{\numberline {4.6}Set 24h/12h mode}{10}%
+\contentsline {subsection}{\numberline {4.7}Set brightness}{10}%
+\contentsline {subsection}{\numberline {4.8}Set night-time fade}{10}%
+\contentsline {subsection}{\numberline {4.9}Get clock status}{10}%
+\contentsline {subsection}{\numberline {4.10}Reset}{11}%

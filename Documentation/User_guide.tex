@@ -91,7 +91,7 @@ The clock has three settings that can be used to customise your clock.
 
 To access the clock menu you press the ``Hours" button twice quickly. The tubes will then stop displaying the time, instead displaying a menu option.
 
-The different menu options can then be selected by single ``hour" button presses.
+The different menu options can then be selected by single ``Hours" button presses.
 
 To exit the menu simply repeat the double click on the hour button or wait 10 seconds for the menu to time out. On time out all changes to the menu options are saved.
 
@@ -159,6 +159,27 @@ This command can be used to read the time from the clocks RTC. First write the 1
 Clock mode command is used to switch from ``User display" back to displaying the time. This command should be used when you no longer want to use it as a display. Simply send the 1 byte command to switch mode. If no user display commands are sent the clock will automatically reset to clock mode after 10 seconds. 
 
 \subsection{User display}
+User display command is used to allow you to control what the tubes display. This is done by writing 4 bytes to the clock. Each byte is a bitmask for a tube, with the byte1 for the tube furthest most left tube and working to the right.
+
+\begin{figure}[!h]
+\includegraphics[scale=0.1]{7Segment}
+\centering
+\caption*{}
+\label{fig:status}
+\end{figure}
+
+Each bit in the byte represents a segment of the display, the least significant bit represents segment A in the figure and the most significant bit DP. 
+
+For example, to write ``3" to a tube you would want to illuminate A, B, C, D and G. Your corresponding bitmask would be 0b01001111 or 0x4F in hex. In the Arduino User Diplay example all the numbers have been defined.
+
+As an example to diplay ``1, 2, 3, 4" on the tubes the bytes you would send would be:
+\begin{description}[font=$\bullet$~\normalfont\scshape]
+\item [] Byte 0: CMD = 0x03
+\item [] Byte 1: 1 = 0x06
+\item [] Byte 2: 2 = 0x5B
+\item [] Byte 3: 3 = 0x4F
+\item [] Byte 4: 4 = 0x66
+\end{description}
 
 \subsection{Set 24h/12h mode}
 This command can be used to change between 24h and 12h clock modes. Follow the command byte by either a 1 or 0. A 1 sets the clock to 12h mode, while a 0 sets it to 24h mode. 
