@@ -14,19 +14,19 @@ void IV3_clock::i2c_trans(uint8_t* data, uint8_t length)
 
 void IV3_clock::set_time(void)
 {
-  uint8_t TX[7] = {SET_TIME, time.year, time.month, time.day, time.hour, time.minute, time.second};
+  uint8_t TX[7] = {SET_TIME, this->time.year, this->time.month, this->time.day, this->time.hour, this->time.minute, this->time.second};
 
   i2c_trans(TX, 7);
 }
 
-void IV3_clock::read_time(void)
+void IV3_clock::get_time(void)
 {
   uint8_t RX[6];
   uint8_t TX[1]={READ_TIME};
-  uint8_t i;
+  uint8_t i=0;
 
   i2c_trans(TX, 1);
-  delay(10);
+  delay(1);
 
   Wire.requestFrom(I2C_address, 6);
   while(Wire.available())
@@ -35,12 +35,30 @@ void IV3_clock::read_time(void)
     i++;
   }
 
-  time.year = RX[0];
-  time.month = RX[1];
-  time.day  = RX[2];
-  time.hour = RX[3];
-  time.minute = RX[4];
-  time.second = RX[5];
+  this->time.year = RX[0];
+  this->time.month = RX[1];
+  this->time.day  = RX[2];
+  this->time.hour = RX[3];
+  this->time.minute = RX[4];
+  this->time.second = RX[5];
+
+}
+
+void IV3_clock::print_time(void)
+{
+  Serial.print(this->time.day);
+  Serial.print(":");
+  Serial.print(this->time.month);
+  Serial.print(":");
+  Serial.print(20);
+  Serial.print(this->time.year);
+  Serial.print(" ");
+  Serial.print(this->time.hour);
+  Serial.print(":");
+  Serial.print(this->time.minute);
+  Serial.print(":");
+  Serial.print(this->time.second);
+  Serial.println("");
 }
 
 void IV3_clock::clock_mode(void)

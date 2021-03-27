@@ -40,7 +40,7 @@ public:
 	IV3_clock(){};
 
   void set_time(void);
-  void read_time(void);
+  void get_time(void);
   void clock_mode(void);
   void user_display(uint8_t *data);
   void set_hour_mode(bool mode);
@@ -51,6 +51,7 @@ public:
 	bool get_hour_mode(void);
 	bool get_fade_mode(void);
 	uint8_t get_brightness(void);
+	void print_time(void);
 };
 
 
